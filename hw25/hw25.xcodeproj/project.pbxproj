@@ -13,9 +13,12 @@
 		BA2D61CE289A622600A74D93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA2D61CC289A622600A74D93 /* Main.storyboard */; };
 		BA2D61D0289A622700A74D93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA2D61CF289A622700A74D93 /* Assets.xcassets */; };
 		BA2D61D3289A622700A74D93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA2D61D1289A622700A74D93 /* LaunchScreen.storyboard */; };
+		D663C3D98C5054E7A22ED4ED /* Pods_hw25.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04BFB7F6D8DDCCE575B03359 /* Pods_hw25.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04BFB7F6D8DDCCE575B03359 /* Pods_hw25.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hw25.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5486EB9DC79611BBD6009328 /* Pods-hw25.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hw25.release.xcconfig"; path = "Target Support Files/Pods-hw25/Pods-hw25.release.xcconfig"; sourceTree = "<group>"; };
 		BA2D61C3289A622600A74D93 /* hw25.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hw25.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA2D61C6289A622600A74D93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA2D61C8289A622600A74D93 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		BA2D61CF289A622700A74D93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA2D61D2289A622700A74D93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA2D61D4289A622700A74D93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6561C55B4AD632AE3E6FF07 /* Pods-hw25.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hw25.debug.xcconfig"; path = "Target Support Files/Pods-hw25/Pods-hw25.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D663C3D98C5054E7A22ED4ED /* Pods_hw25.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AAB585CFF081BE28491F8903 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D6561C55B4AD632AE3E6FF07 /* Pods-hw25.debug.xcconfig */,
+				5486EB9DC79611BBD6009328 /* Pods-hw25.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BA2D61BA289A622600A74D93 = {
 			isa = PBXGroup;
 			children = (
 				BA2D61C5289A622600A74D93 /* hw25 */,
 				BA2D61C4289A622600A74D93 /* Products */,
+				AAB585CFF081BE28491F8903 /* Pods */,
+				BC3912A530E73C71CE09E5C4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +72,79 @@
 		BA2D61C5289A622600A74D93 /* hw25 */ = {
 			isa = PBXGroup;
 			children = (
-				BA2D61C6289A622600A74D93 /* AppDelegate.swift */,
-				BA2D61C8289A622600A74D93 /* SceneDelegate.swift */,
-				BA2D61CA289A622600A74D93 /* ViewController.swift */,
-				BA2D61CC289A622600A74D93 /* Main.storyboard */,
-				BA2D61CF289A622700A74D93 /* Assets.xcassets */,
-				BA2D61D1289A622700A74D93 /* LaunchScreen.storyboard */,
-				BA2D61D4289A622700A74D93 /* Info.plist */,
+				BA480B21289A63D2005FE55B /* Resources */,
+				BA480B20289A63BE005FE55B /* Source */,
 			);
 			path = hw25;
+			sourceTree = "<group>";
+		};
+		BA480B20289A63BE005FE55B /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				BA480B23289A640D005FE55B /* Scenes */,
+				BA480B22289A6407005FE55B /* App */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		BA480B21289A63D2005FE55B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BA2D61CF289A622700A74D93 /* Assets.xcassets */,
+				BA2D61D4289A622700A74D93 /* Info.plist */,
+				BA2D61CC289A622600A74D93 /* Main.storyboard */,
+				BA2D61D1289A622700A74D93 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BA480B22289A6407005FE55B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BA2D61C6289A622600A74D93 /* AppDelegate.swift */,
+				BA2D61C8289A622600A74D93 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		BA480B23289A640D005FE55B /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				BA480B26289A646F005FE55B /* Model */,
+				BA480B24289A6450005FE55B /* View */,
+				BA480B25289A6466005FE55B /* Controller */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		BA480B24289A6450005FE55B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BA480B25289A6466005FE55B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BA2D61CA289A622600A74D93 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BA480B26289A646F005FE55B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BC3912A530E73C71CE09E5C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04BFB7F6D8DDCCE575B03359 /* Pods_hw25.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +154,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA2D61D7289A622700A74D93 /* Build configuration list for PBXNativeTarget "hw25" */;
 			buildPhases = (
+				3D0D5E7671241EF40DDA799D /* [CP] Check Pods Manifest.lock */,
 				BA2D61BF289A622600A74D93 /* Sources */,
 				BA2D61C0289A622600A74D93 /* Frameworks */,
 				BA2D61C1289A622600A74D93 /* Resources */,
+				60CCA2ACC2177D6BC36807B6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +214,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D0D5E7671241EF40DDA799D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-hw25-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60CCA2ACC2177D6BC36807B6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hw25/Pods-hw25-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hw25/Pods-hw25-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-hw25/Pods-hw25-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BA2D61BF289A622600A74D93 /* Sources */ = {
@@ -282,6 +406,7 @@
 		};
 		BA2D61D8289A622700A74D93 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6561C55B4AD632AE3E6FF07 /* Pods-hw25.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +435,7 @@
 		};
 		BA2D61D9289A622700A74D93 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5486EB9DC79611BBD6009328 /* Pods-hw25.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

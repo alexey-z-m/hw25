@@ -13,6 +13,8 @@
 		BA2D61CE289A622600A74D93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA2D61CC289A622600A74D93 /* Main.storyboard */; };
 		BA2D61D0289A622700A74D93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA2D61CF289A622700A74D93 /* Assets.xcassets */; };
 		BA2D61D3289A622700A74D93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA2D61D1289A622700A74D93 /* LaunchScreen.storyboard */; };
+		BA8BEA62289BEDBB0002AE6C /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8BEA61289BEDBB0002AE6C /* TableViewCell.swift */; };
+		BA8BEA64289D44690002AE6C /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8BEA63289D44690002AE6C /* CardViewController.swift */; };
 		D663C3D98C5054E7A22ED4ED /* Pods_hw25.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04BFB7F6D8DDCCE575B03359 /* Pods_hw25.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +29,8 @@
 		BA2D61CF289A622700A74D93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA2D61D2289A622700A74D93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA2D61D4289A622700A74D93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA8BEA61289BEDBB0002AE6C /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		BA8BEA63289D44690002AE6C /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		D6561C55B4AD632AE3E6FF07 /* Pods-hw25.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hw25.debug.xcconfig"; path = "Target Support Files/Pods-hw25/Pods-hw25.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,6 +124,7 @@
 		BA480B24289A6450005FE55B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BA8BEA61289BEDBB0002AE6C /* TableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -128,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				BA2D61CA289A622600A74D93 /* ViewController.swift */,
+				BA8BEA63289D44690002AE6C /* CardViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -263,7 +269,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA2D61CB289A622600A74D93 /* ViewController.swift in Sources */,
+				BA8BEA62289BEDBB0002AE6C /* TableViewCell.swift in Sources */,
 				BA2D61C7289A622600A74D93 /* AppDelegate.swift in Sources */,
+				BA8BEA64289D44690002AE6C /* CardViewController.swift in Sources */,
 				BA2D61C9289A622600A74D93 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,7 +422,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9A7Q9CH3UQ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = hw25/Info.plist;
+				INFOPLIST_FILE = hw25/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -443,7 +451,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9A7Q9CH3UQ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = hw25/Info.plist;
+				INFOPLIST_FILE = hw25/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

@@ -65,7 +65,6 @@ class ViewController: UIViewController {
             searchName = "?name=" + searchName
         }
         let requestUrl = "https://api.magicthegathering.io/v1/cards" + searchName
-        print(requestUrl)
         let request = AF.request(requestUrl)
         request.responseDecodable(of: Cards.self) { (data) in
             guard let result = data.value else {

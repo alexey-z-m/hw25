@@ -56,9 +56,17 @@ class TableViewCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        setupHierarchy()
+        setupLayout()
+    }
+    
+    func setupHierarchy() {
         contentView.addSubview(typeCard)
         contentView.addSubview(nameCard)
         contentView.addSubview(cardImage)
+    }
+    
+    func setupLayout() {
         nameCard.snp.makeConstraints { make in
             make.left.top.equalToSuperview().offset(10)
         }

@@ -15,6 +15,7 @@
 		BA2D61D3289A622700A74D93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA2D61D1289A622700A74D93 /* LaunchScreen.storyboard */; };
 		BA8BEA62289BEDBB0002AE6C /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8BEA61289BEDBB0002AE6C /* TableViewCell.swift */; };
 		BA8BEA64289D44690002AE6C /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8BEA63289D44690002AE6C /* CardViewController.swift */; };
+		BADD53CD28C1F93F0084419D /* Cards.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADD53CC28C1F93F0084419D /* Cards.swift */; };
 		D663C3D98C5054E7A22ED4ED /* Pods_hw25.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04BFB7F6D8DDCCE575B03359 /* Pods_hw25.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		BA2D61D4289A622700A74D93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA8BEA61289BEDBB0002AE6C /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		BA8BEA63289D44690002AE6C /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		BADD53CC28C1F93F0084419D /* Cards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cards.swift; sourceTree = "<group>"; };
 		D6561C55B4AD632AE3E6FF07 /* Pods-hw25.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hw25.debug.xcconfig"; path = "Target Support Files/Pods-hw25/Pods-hw25.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,6 +143,7 @@
 		BA480B26289A646F005FE55B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BADD53CC28C1F93F0084419D /* Cards.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 				BA2D61CB289A622600A74D93 /* ViewController.swift in Sources */,
 				BA8BEA62289BEDBB0002AE6C /* TableViewCell.swift in Sources */,
 				BA2D61C7289A622600A74D93 /* AppDelegate.swift in Sources */,
+				BADD53CD28C1F93F0084419D /* Cards.swift in Sources */,
 				BA8BEA64289D44690002AE6C /* CardViewController.swift in Sources */,
 				BA2D61C9289A622600A74D93 /* SceneDelegate.swift in Sources */,
 			);

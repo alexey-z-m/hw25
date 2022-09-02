@@ -1,24 +1,18 @@
 import UIKit
 
 class CardViewController: UIViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .white
-        setupHierarchy()
-        setupLayout()
-    }
     
     private let titleNameCard: UILabel = {
         let label = UILabel()
         label.numberOfLines = 1
-        label.font = .systemFont(ofSize: 40, weight: .bold)
+        label.font = .systemFont(ofSize: Metrics.titleNameCardFontSize, weight: .bold)
         label.textAlignment = .center
         return label
     }()
     
     private let nameCard: UILabel = {
         let label = UILabel()
-        label.font = .systemFont(ofSize: 17, weight: .bold)
+        label.font = .systemFont(ofSize: Metrics.nameCardFontSize, weight: .bold)
         return label
     }()
     private let typeCard: UILabel = {
@@ -38,7 +32,7 @@ class CardViewController: UIViewController {
         imageView.contentMode = .scaleAspectFit
         imageView.backgroundColor = .systemGray5
         imageView.layer.masksToBounds = true
-        imageView.layer.cornerRadius = 20
+        imageView.layer.cornerRadius = Metrics.cardImageRadius
         
         return imageView
     }()
@@ -61,23 +55,16 @@ class CardViewController: UIViewController {
         }
     }
     
-    func setImage(_ imageUI: UIImageView, source: String?) {
-        let queue = DispatchQueue(label: "loadImage")
-        queue.async {
-            guard let imagePath = source,
-                  let imageURL = URL(string: imagePath),
-                  let imageData = try? Data(contentsOf: imageURL)
-            else {
-                DispatchQueue.main.async {
-                    imageUI.image = UIImage(systemName: "photo")
-                }
-                return
-            }
-            DispatchQueue.main.async {
-                imageUI.image = UIImage(data: imageData)
-            }
-        }
+    // MARK: - Lifecycle
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .white
+        setupHierarchy()
+        setupLayout()
     }
+    
+    // MARK: - Settings
     
     func setupHierarchy() {
         view.addSubview(typeCard)
@@ -95,7 +82,7 @@ class CardViewController: UIViewController {
         cardImage.snp.makeConstraints { make in
             make.top.equalTo(titleNameCard.snp.bottom).offset(30)
             make.left.right.equalToSuperview()
-            make.height.equalTo(300)
+            make.height.equalTo(Metrics.cardImageHeight)
         }
         nameCard.snp.makeConstraints { make in
             make.top.equalTo(cardImage.snp.bottom).offset(30)
@@ -112,5 +99,32 @@ class CardViewController: UIViewController {
             make.left.equalToSuperview().offset(20)
             make.right.equalToSuperview().offset(-10)
         }
+    }
+    
+    func setImage(_ imageUI: UIImageView, source: String?) {
+        let queue = DispatchQueue(label: "loadImage")
+        queue.async {
+            guard let imagePath = source,
+                  let imageURL = URL(string: imagePath),
+                  let imageData = try? Data(contentsOf: imageURL)
+            else {
+                DispatchQueue.main.async {
+                    imageUI.image = UIImage(systemName: "photo")
+                }
+                return
+            }
+            DispatchQueue.main.async {
+                imageUI.image = UIImage(data: imageData)
+            }
+        }
+    }
+}
+
+extension CardViewController {
+    enum Metrics {
+        static let titleNameCardFontSize: CGFloat = 40
+        static let nameCardFontSize: CGFloat = 17
+        static let cardImageRadius: CGFloat = 20
+        static let cardImageHeight: CGFloat = 300
     }
 }
